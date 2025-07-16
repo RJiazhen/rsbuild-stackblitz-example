@@ -5,9 +5,10 @@ export default defineConfig({
   plugins: [pluginReact()],
   dev: {
     setupMiddlewares: (middlewares) => {
-      middlewares.push((req, res, next) => {
+      middlewares.unshift((_, __, next) => {
         console.log('require.cache', require.cache)
-        const test = requrie('./test.ts')
+        const test = require('./test.ts')
+        console.log('test: ', test)
         next();
       });
     },
