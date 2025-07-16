@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "export NODE_NO_WARNINGS=1 && rsbuild build",
-    "dev": "export NODE_NO_WARNINGS=1 && rsbuild dev",
+    "dev": "export NODE_NO_WARNINGS=1 && export JITI_MODULE_CACHE=false && rsbuild dev ",
     "preview": "export NODE_NO_WARNINGS=1 && rsbuild preview"
   },
   "dependencies": {

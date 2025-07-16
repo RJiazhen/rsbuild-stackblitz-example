@@ -1,6 +1,6 @@
 import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
-
+console.log('process.env.JITI_MODULE_CACHE', process.env.JITI_MODULE_CACHE)
 export default defineConfig({
   plugins: [pluginReact()],
   dev: {
