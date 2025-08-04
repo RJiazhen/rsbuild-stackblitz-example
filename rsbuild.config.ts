@@ -10,7 +10,7 @@ export default defineConfig({
     copy: [
       {
         from: './public',
-        globOptions: { ignore: ['**/index.html'] },
+        globOptions: { ignore: ['**/index.html'] }, // 忽略 public/index.html 以防止打包时报错
       },
     ],
   },
